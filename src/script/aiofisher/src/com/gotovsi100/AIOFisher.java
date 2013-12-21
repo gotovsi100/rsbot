@@ -63,11 +63,11 @@ public class AIOFisher extends PollingScript implements PaintListener,  MessageL
 	public void repaint(Graphics g) {
 		        g.setColor(Color.ORANGE);
 		        double FishPerSec = FishCatched/(double)(getRuntime()/1000);
-		       // int profit = clay * price;
-		       // double profitPerSec = profit/(double)(script.getRuntime()/1000);
 		        g.drawString("Timer: "+ Format.time(getRuntime()), 100,150);
 		        g.drawString("Fish Catched: " + FishCatched ,100,130);
 		        g.drawString("Fish/Hr: "+(int) Math.round(FishPerSec*3600), 100, 170);
+		     // int profit = fish * price;
+			 // double profitPerSec = profit/(double)(script.getRuntime()/1000);
 		        //g.drawString("Trips: "+trips);
 		        //g.drawString("Trips/Hr: "+(int) Math.round(tripsPerSec*3600));
 		        //g.drawString("Profit: "+Format.toK(profit));
