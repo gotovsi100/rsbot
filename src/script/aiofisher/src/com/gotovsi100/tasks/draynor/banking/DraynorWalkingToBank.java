@@ -17,7 +17,8 @@ public class DraynorWalkingToBank extends Task {
 	@Override
 	public boolean activate() {
 		return ctx.backpack.select().count() == 28 && !ctx.bank.isOpen() &&
-				!AreaEnum.DRAYNOR.getBankArea().contains(ctx.players.local());
+				!AreaEnum.DRAYNOR.getBankArea().contains(ctx.players.local())
+						&& AreaEnum.DRAYNOR.getVillageArea().contains(ctx.players.local());
 	}
 
 	@Override

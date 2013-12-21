@@ -4,7 +4,7 @@ public enum FishSpotEnum {
 	
 	SCHRIMP_SPOT(327),
 	
-	TROUT_SPOT(328);
+	TROUT_SALMON_SPOT(328);
 	
    int FishingSpotID;
 	
